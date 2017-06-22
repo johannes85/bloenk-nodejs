@@ -16,7 +16,7 @@ export default class Device extends EventEmitter {
   private ledCount: number;
   private busyCount: number;
 
-  constructor(private vid: number, private pid: number) {
+  constructor(private vid: number = 5824, private pid: number = 1500) {
     super();
   }
 
