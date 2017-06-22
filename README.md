@@ -1,11 +1,16 @@
 ## Blönk USB RGB Notifier Node.js Library
 
-### Examples
+### Installation
 
-#### Installation
+#### Install Driver
+Use Zadig (http://zadig.akeo.ie/) to install the "WinUSB" driver for the "Bloenk" device.
+
+#### Install Library
 ```bash
 npm install bloenk --save
 ```
+
+### Examples
 
 #### Typescript
 ```typescript
@@ -20,7 +25,7 @@ import { Device, Color } from 'bloenk';
 })();
 ```
 
-#### Plain js
+#### Plain JavaScript
 ```javascript
 let bloenk = require('bloenk');
 let dev = new bloenk.Device(5824, 1500);
